@@ -1,0 +1,11 @@
+- build: 0.22.1/centos/7
+  image:
+    - mesoscloud/mesos-slave:0.22.1-centos-7
+    - mesoscloud/mesos-slave:0.22.1-centos
+    - mesoscloud/mesos-slave:0.22.1
+    - mesoscloud/mesos-slave:latest
+    
+- build: 0.22.1/ubuntu/14.04
+  image:
+    - mesoscloud/mesos-slave:0.22.1-ubuntu-14.04
+    - mesoscloud/mesos-slave:0.22.1-ubuntu
