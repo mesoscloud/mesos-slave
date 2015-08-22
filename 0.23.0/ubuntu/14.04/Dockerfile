@@ -1,11 +1,15 @@
 FROM ubuntu:14.04
 
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && echo deb http://repos.mesosphere.io/ubuntu trusty main > /etc/apt/sources.list.d/mesosphere.list && apt-get update && apt-get -y install mesos=0.23.0-1.0.ubuntu1404
+RUN apt-get update && \
+apt-get install -y curl
 
-RUN apt-get install -y curl wget
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
+echo deb http://repos.mesosphere.io/ubuntu trusty main > /etc/apt/sources.list.d/mesosphere.list && \
+apt-get update && \
+apt-get -y install mesos=0.23.0-1.0.ubuntu1404
 
 # http://docs.docker.com/installation/ubuntulinux/
-RUN wget -qO- https://get.docker.com/ | sh
+RUN curl -fLsS https://get.docker.com/ | sh
 
 CMD ["/usr/sbin/mesos-slave"]
 

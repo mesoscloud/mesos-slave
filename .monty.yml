@@ -20,3 +20,7 @@
   image:
     - mesoscloud/mesos-slave:0.22.1-ubuntu-14.04
     - mesoscloud/mesos-slave:0.22.1-ubuntu
+
+
+- tests:
+    - cmd: mesos-slave --version
