@@ -25,8 +25,8 @@
 - tests:
     - cmd: mesos-slave --version
 
-    - cmd: test -z "`echo $MESOS_CREDENTIALS`"
+    - cmd: test -z "$MESOS_CREDENTIALS"
 
-    - cmd: test -n "`echo $MESOS_CREDENTIALS`"
+    - cmd: test -n "$MESOS_CREDENTIALS"
       env:
         - SECRET=password
