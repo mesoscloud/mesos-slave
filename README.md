@@ -23,7 +23,7 @@ docker run -d \
 mesoscloud/mesos-slave:0.23.0-centos-7
 ```
 
-Set environment variable `SECRET` to enable authentication.
+Set environment variable `SECRET` to enable slave authentication.
 
 ## Ubuntu
 
@@ -42,4 +42,4 @@ docker run -d \
 mesoscloud/mesos-slave:0.23.0-ubuntu-14.04
 ```
 
-Set environment variable `SECRET` to enable authentication.
+Set environment variable `SECRET` to enable slave authentication.
