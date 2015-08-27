@@ -3,8 +3,8 @@
 PRINCIPAL=${PRINCIPAL:-root}
 
 if [ -n "$SECRET" ]; then
-    echo -n "$PRINCIPAL $SECRET" > /tmp/credentials
-    export MESOS_CREDENTIALS=/tmp/credentials
+    echo -n "$PRINCIPAL $SECRET" > /tmp/credential
+    export MESOS_CREDENTIAL=/tmp/credential
 fi
 
 exec "$@"
