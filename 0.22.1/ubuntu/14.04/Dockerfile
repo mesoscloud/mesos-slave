@@ -20,3 +20,7 @@ ENV MESOS_CONTAINERIZERS docker,mesos
 ENV MESOS_EXECUTOR_REGISTRATION_TIMEOUT 5mins
 
 VOLUME /tmp/mesos
+
+COPY entrypoint.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]
