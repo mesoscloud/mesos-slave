@@ -8,7 +8,7 @@ http://mesos.apache.org/
 
 ## CentOS
 
-[![](https://badge.imagelayers.io/mesoscloud/mesos-slave:0.23.0-centos-7.svg)](https://imagelayers.io/?images=mesoscloud/mesos-slave:0.23.0-centos-7)
+[![](https://badge.imagelayers.io/mesoscloud/mesos-slave:0.24.1-centos-7.svg)](https://imagelayers.io/?images=mesoscloud/mesos-slave:0.24.1-centos-7)
 
 e.g.
 
@@ -20,14 +20,14 @@ docker run -d \
 -v /sys/fs/cgroup:/sys/fs/cgroup \
 -v /var/run/docker.sock:/var/run/docker.sock \
 --name slave --net host --privileged --restart always \
-mesoscloud/mesos-slave:0.23.0-centos-7
+mesoscloud/mesos-slave:0.24.1-centos-7
 ```
 
 Set environment variable `SECRET` to enable slave authentication.
 
 ## Ubuntu
 
-[![](https://badge.imagelayers.io/mesoscloud/mesos-slave:0.23.0-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/mesos-slave:0.23.0-ubuntu-14.04)
+[![](https://badge.imagelayers.io/mesoscloud/mesos-slave:0.24.1-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/mesos-slave:0.24.1-ubuntu-14.04)
 
 e.g.
 
@@ -39,7 +39,7 @@ docker run -d \
 -v /sys/fs/cgroup:/sys/fs/cgroup \
 -v /var/run/docker.sock:/var/run/docker.sock \
 --name slave --net host --privileged --restart always \
-mesoscloud/mesos-slave:0.23.0-ubuntu-14.04
+mesoscloud/mesos-slave:0.24.1-ubuntu-14.04
 ```
 
 Set environment variable `SECRET` to enable slave authentication.
