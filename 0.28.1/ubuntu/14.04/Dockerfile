@@ -6,7 +6,7 @@ apt-get install -y curl
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
 echo deb http://repos.mesosphere.io/ubuntu trusty main > /etc/apt/sources.list.d/mesosphere.list && \
 apt-get update && \
-apt-get -y install mesos=0.23.0-1.0.ubuntu1404
+apt-get -y install mesos=0.28.1-2.0.20.ubuntu1404
 
 # http://docs.docker.com/installation/ubuntulinux/
 RUN curl -fLsS https://get.docker.com/ | sh
