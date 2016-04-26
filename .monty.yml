@@ -32,28 +32,6 @@
     - mesoscloud/mesos-slave:0.24.1-ubuntu-14.04
     - mesoscloud/mesos-slave:0.24.1-ubuntu
 
-- build: 0.23.0/centos/7
-  image:
-    - mesoscloud/mesos-slave:0.23.0-centos-7
-    - mesoscloud/mesos-slave:0.23.0-centos
-    - mesoscloud/mesos-slave:0.23.0
-
-- build: 0.23.0/ubuntu/14.04
-  image:
-    - mesoscloud/mesos-slave:0.23.0-ubuntu-14.04
-    - mesoscloud/mesos-slave:0.23.0-ubuntu
-
-- build: 0.22.1/centos/7
-  image:
-    - mesoscloud/mesos-slave:0.22.1-centos-7
-    - mesoscloud/mesos-slave:0.22.1-centos
-    - mesoscloud/mesos-slave:0.22.1
-
-- build: 0.22.1/ubuntu/14.04
-  image:
-    - mesoscloud/mesos-slave:0.22.1-ubuntu-14.04
-    - mesoscloud/mesos-slave:0.22.1-ubuntu
-
 
 - tests:
     - cmd: mesos-slave --version
