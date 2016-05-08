@@ -1,12 +1,15 @@
 FROM ubuntu:14.04
+MAINTAINER Peter Ericson <pdericson@gmail.com>
 
 RUN apt-get update && \
-apt-get install -y curl
+apt-get install --no-install-recommends -y curl && \
+rm -rf /var/lib/apt/lists/*
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
 echo deb http://repos.mesosphere.io/ubuntu trusty main > /etc/apt/sources.list.d/mesosphere.list && \
 apt-get update && \
-apt-get -y install mesos=0.24.1-0.2.35.ubuntu1404
+apt-get install --no-install-recommends -y mesos=0.24.1-0.2.35.ubuntu1404 && \
+rm -rf /var/lib/apt/lists/*
 
 # http://docs.docker.com/installation/ubuntulinux/
 RUN curl -fLsS https://get.docker.com/ | sh
