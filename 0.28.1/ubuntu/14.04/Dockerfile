@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Peter Ericson <pdericson@gmail.com>
 
 RUN apt-get update && \
-apt-get install --no-install-recommends -y curl && \
+apt-get install --no-install-recommends -y ca-certificates curl && \
 rm -rf /var/lib/apt/lists/*
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
@@ -12,7 +12,7 @@ apt-get install --no-install-recommends -y mesos=0.28.1-2.0.20.ubuntu1404 && \
 rm -rf /var/lib/apt/lists/*
 
 # http://docs.docker.com/installation/ubuntulinux/
-RUN curl -fLsS https://get.docker.com/ | sh
+RUN curl -fLsS https://get.docker.com/ | sh && test -x /usr/bin/docker
 
 CMD ["/usr/sbin/mesos-slave"]
 

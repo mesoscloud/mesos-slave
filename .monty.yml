@@ -41,3 +41,5 @@
     - cmd: test -n "$MESOS_CREDENTIAL"
       env:
         - SECRET=password
+
+    - cmd: test -x /usr/bin/docker
