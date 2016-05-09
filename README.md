@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/mesoscloud/mesos-slave.svg?branch=master)](https://travis-ci.org/mesoscloud/mesos-slave)
-[![Docker Stars](https://img.shields.io/docker/stars/mesoscloud/mesos-slave.svg)](https://hub.docker.com/r/mesoscloud/mesos-slave/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/mesoscloud/mesos-slave.svg)](https://hub.docker.com/r/mesoscloud/mesos-slave/)
+[![Build Status](https://travis-ci.org/mesoscloud/mesos-slave.svg?branch=master)](https://travis-ci.org/mesoscloud/mesos-slave) [![Docker Stars](https://img.shields.io/docker/stars/mesoscloud/mesos-slave.svg)](https://hub.docker.com/r/mesoscloud/mesos-slave/) [![Docker Pulls](https://img.shields.io/docker/pulls/mesoscloud/mesos-slave.svg)](https://hub.docker.com/r/mesoscloud/mesos-slave/)
 
 # mesos-slave
 
